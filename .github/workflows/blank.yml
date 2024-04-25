@@ -36,4 +36,4 @@ jobs:
           echo test, and deploy your project.
 
       - name: python look
-        run: python3
+        run: pip install jmcomic -i https://pypi.org/project --upgrade
