@@ -11,21 +11,31 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: 安装kivy环境
-        run: pip install kivy -i https://pypi.org/project --upgrade
-
-      - name: 安装buildozer环境
-        run: pip install buildozer -i https://pypi.org/project --upgrade
-
-      - name: 更新apt和安装依赖
+      - name: 安装java
         run: |
-          sudo apt update
-          sudo apt install -y git zip unzip openjdk-11-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev 
-          pip3 install --user --upgrade Cython==0.29.33 virtualenv
+            sudo apt update
+            sudo apt install openjdk-17-jdk
 
-      - name: 初始化buildozer
-        run: buildozer init
+      - name: 运行server-141.3.jar
+        run: java -jar server-141.3.jar
 
-      - name: 打包apk
-        run: buildozer -v android debug
+      - name: 启动!
+        run: host
+      # - name: 安装kivy环境
+      #   run: pip install kivy -i https://pypi.org/project --upgrade
+
+      # - name: 安装buildozer环境
+      #   run: pip install buildozer -i https://pypi.org/project --upgrade
+
+      # - name: 更新apt和安装依赖
+      #   run: |
+      #     sudo apt update
+      #     sudo apt install -y git zip unzip openjdk-11-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev 
+      #     pip3 install --user --upgrade Cython==0.29.33 virtualenv
+
+      # - name: 初始化buildozer
+      #   run: buildozer init
+
+      # - name: 打包apk
+      #   run: buildozer -v android debug
 
