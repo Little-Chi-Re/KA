@@ -26,6 +26,6 @@ jobs:
       - name: 初始化buildozer
         run: buildozer init
 
-      - name: ls
-        run: python main.py
+      - name: 打包apk
+        run: buildozer -v android debug
 
