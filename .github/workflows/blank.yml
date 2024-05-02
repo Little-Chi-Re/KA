@@ -22,7 +22,19 @@ jobs:
             python -m pip install beeware
 
       - name: 创建
-        run: briefcase new
+        run: |
+          briefcase new
+          helloworld
+          helloworld
+          helloworld
+          helloworld
+          helloworld
+          helloworld
+          helloworld
+          helloworld
+          1
+          1
+
 
       
 
