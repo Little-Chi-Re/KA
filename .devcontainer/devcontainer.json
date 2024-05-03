@@ -1,0 +1,5 @@
+{
+    "name": "My Python Dev Container",
+    "dockerFile": "Dockerfile", // 如果你使用的是Dockerfile来定义环境
+    "postCreateCommand": "python3.8 -m venv .venv && . .venv/bin/activate && pip install --upgrade pip"
+}
