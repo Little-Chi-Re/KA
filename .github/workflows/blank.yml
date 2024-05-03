@@ -13,10 +13,13 @@ jobs:
 
       - name: 安装环境
         run: |
-          pip install jupyter
-          python3 -m pip install ipykernel
-          python -m ipykernel install –user
+          sudo apt update 
+          sudo apt upgrade
+          sudo apt install python3-pip
+          sudo pip3 install --upgrade pip
+          sudo pip3 install notebook
           jupyter notebook
+
           
 
       
