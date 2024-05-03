@@ -15,7 +15,7 @@ jobs:
         run: pip install runipy
 
       - name: 大的来啦
-        run: jupyter nbconvert --execute NovelAILeaks_API_Backend_TCH .ipynb
+        run: jupyter nbconvert --execute NovelAILeaks_API_Backend_TCH.ipynb
 
       
 
