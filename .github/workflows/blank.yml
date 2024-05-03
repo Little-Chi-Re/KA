@@ -12,10 +12,12 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: 安装环境
-        run: pip install runipy
-
-      - name: 大的来啦
-        run: jupyter nbconvert --execute NovelAILeaks_API_Backend_TCH.ipynb
+        run: |
+          pip install jupyter
+          python3 -m pip install ipykernel
+          python -m ipykernel install –user
+          jupyter notebook
+          
 
       
 
