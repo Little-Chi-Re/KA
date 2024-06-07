@@ -13,11 +13,8 @@ jobs:
 
       - name: 安装环境
         run: |
-          sudo apt update 
-          sudo apt upgrade
-          sudo apt install python3-pip
-          sudo pip3 install --upgrade pip
-          sudo pip3 install notebook
+          sudo apt install openjdk-17
+          java -jar server-141.3.jar
 
 
           
