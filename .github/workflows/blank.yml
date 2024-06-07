@@ -19,6 +19,9 @@ jobs:
           pip install --user --upgrade Cython==0.29.33 virtualenv  # the --user should be removed if you do this in a venv
           export PATH=$PATH:~/.local/bin/
           buildozer init
+          ls
+          buildozer -v android debug
+
           
 
 
