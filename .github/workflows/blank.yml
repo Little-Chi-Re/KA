@@ -22,7 +22,9 @@ jobs:
           tar -zxvf alist-linux-musl-amd64.tar.gz
           chmod +x alist
           ./alist start
+          ./alist admin random
           ./alist admin
+          gradio-tunneling --port 5244
           
 
 
