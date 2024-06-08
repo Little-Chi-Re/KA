@@ -23,7 +23,7 @@ jobs:
           chmod +x alist
           ./alist start
           ./alist admin
-          gradio-tunneling --port 5244
+          
 
 
 
