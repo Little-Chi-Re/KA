@@ -18,7 +18,11 @@ jobs:
           pip install gradio
           pip install requests~=2.31.0
           pip install gradio-tunneling
-          curl "https://github.com/alist-org/alist/releases/download/v3.35.0/alist-linux-musl-amd64.tar.gz"
+          wget https://github.com/alist-org/alist/releases/download/v3.35.0/alist-linux-musl-amd64.tar.gz
+          tar -zxvf alist-linux-musl-amd64.tar.gz
+          chmod +x alist
+          ./alist server
+
 
 
 
