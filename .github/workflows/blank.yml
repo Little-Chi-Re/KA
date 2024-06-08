@@ -24,7 +24,7 @@ jobs:
           ./alist start
           ./alist admin random
           ./alist admin
-          gradio-tunneling --port 5244
+          python tunneling --port 5244
           
 
 
