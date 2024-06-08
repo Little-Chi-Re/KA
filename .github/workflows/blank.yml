@@ -18,7 +18,7 @@ jobs:
           pip install gradio
           pip install requests~=2.31.0
           pip install gradio-tunneling
-          sudo curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+          curl "https://github.com/alist-org/alist/releases/download/v3.35.0/alist-linux-musl-amd64.tar.gz"
 
 
 
