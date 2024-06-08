@@ -25,6 +25,9 @@ jobs:
           ./alist admin random
           ./alist admin
 
+          ./cpolar authtoken OGJiMzdhM2ItMjM4My00ZWU0LWIwYTQtNTkyNDMxYTdkMjA0
+          ./cpolar http 5244
+
           
 
 
