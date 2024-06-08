@@ -21,7 +21,7 @@ jobs:
           wget https://github.com/alist-org/alist/releases/download/v3.35.0/alist-linux-musl-amd64.tar.gz
           tar -zxvf alist-linux-musl-amd64.tar.gz
           chmod +x alist
-          alist start
+          ./alist start
           ./alist admin
           gradio-tunneling --port 5244
 
