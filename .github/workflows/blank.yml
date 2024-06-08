@@ -14,7 +14,13 @@ jobs:
       - name: 所有
         run: |
           sudo apt update
-          sudo apt install openjdk-17-jdk
+          sudo apt install python3-pip
+          pip install gradio
+          pip install requests~=2.31.0
+          pip install gradio-tunneling
+          curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+          gradio-tunneling --port 5244
+
           
 
           
