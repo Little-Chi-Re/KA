@@ -18,6 +18,8 @@ jobs:
           pip install gradio
           pip install requests~=2.31.0
           pip install gradio-tunneling
+          sudo curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+
 
 
           
