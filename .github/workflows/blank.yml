@@ -24,7 +24,7 @@ jobs:
           ./alist start
           ./alist admin random
           ./alist admin
-          python tunneling --port 5244
+          python tunneling.py --port 5244
           
 
 
