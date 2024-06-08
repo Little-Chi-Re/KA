@@ -13,20 +13,20 @@ jobs:
 
       - name: 所有
         run: |
-          sudo apt update
-          # sudo apt install python3-pip
-          # pip install gradio
-          # pip install requests~=2.31.0
-          # pip install gradio-tunneling
-          wget https://github.com/alist-org/alist/releases/download/v3.35.0/alist-linux-musl-amd64.tar.gz
-          tar -zxvf alist-linux-musl-amd64.tar.gz
-          chmod +x alist
-          ./alist start
-          ./alist admin random
-          ./alist admin
+          # sudo apt update
+          # # sudo apt install python3-pip
+          # # pip install gradio
+          # # pip install requests~=2.31.0
+          # # pip install gradio-tunneling
+          # wget https://github.com/alist-org/alist/releases/download/v3.35.0/alist-linux-musl-amd64.tar.gz
+          # tar -zxvf alist-linux-musl-amd64.tar.gz
+          # chmod +x alist
+          # ./alist start
+          # ./alist admin random
+          # ./alist admin
 
-          ./cpolar authtoken OGJiMzdhM2ItMjM4My00ZWU0LWIwYTQtNTkyNDMxYTdkMjA0
-          ./cpolar http 5244
+          # ./cpolar authtoken OGJiMzdhM2ItMjM4My00ZWU0LWIwYTQtNTkyNDMxYTdkMjA0
+          # ./cpolar http 5244
 
           
 
